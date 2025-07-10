@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH MOVIES</title>
+   <link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+   <div class="box">
+  <h1>Search Movies</h1>
+  <form id="movieForm">
+    <label>Genre:
+      <input type="text" id="genre" placeholder="e.g. action,comedy..." required/>
+    </label><br><br>
+    <lable>Language:
+      <input type="text" id="language" placeholder="e.g. hindi,english,korean..." required/>
+    </lable><br><br>
+    <lable>Start Year:
+      <input type="number" id="startYear" value="2000"/>
+    </lable><br><br>
+    <lable>End Year:
+       <input type="number" id="endYear" value="2024"/>
+    </lable><br><br>
+    <lable>Type:
+      <input type="text" id="type" placeholder="e.g. movies,series,anime..." required/>
+    </lable><br><br>
+    
+    <lable>Min_IMDB:
+      <input type="number" id="min_imdb" placeholder="e.g.6,7,8.." required/>
+    </lable><br><br>
+
+    <lable>Max_IMDB:
+      <input type="number" id="max_imdb" placeholder="e.g. 8,9..." required/>
+    </lable><br><br>
+
+    
+    <button type="submit">Search</button>
+  </form>
+  </div>
+ </div>
+<pre id="results"></pre>
+<div id="movieResults"></div>
+<p id="title"></p>
+<p id="genre"></p>
+<p id="imdbrating"></p>
+<p id="released"></p>
+<p id="type"></p>
+<p id="synopsis"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
